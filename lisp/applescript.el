@@ -1,5 +1,5 @@
 (defun applescript--eval-form (form)
-  "Inserts an Applescript program built from FROM into the current buffer."
+  "Inserts an Applescript program built from FORM into the current buffer."
   (cond ((listp form)
          (destructuring-bind (first &optional second third) form
            (cond ((eq first :tell)
